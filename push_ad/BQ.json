@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bigqueryroject-372608",
+  "private_key_id": "0142f2c66363b27e692e4abc5c99728ed2e499bd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQChO8KW1TAbCEUm\nsU4NFzno74yk71UcRsq7sUrFlzCAy+DHLNFVh7+9hwHhBMZQzi4a3aBYk1xcnUE7\n29KGlScx7NpI55zXyHwxID0tYgEhNbZMhc2DF80502TNf0IJO4HUpm5nmZPbW+2B\n8slIo54x7tqwrxfV/uU0tLy9tUFF4uhH9tzLKKq1dweaq3hsU238O5vACpmYXrTH\nD/6/z1mPi1A1RKaJrI4duhdVQn8HLlEmg/cCJsA+5LvKQEjvojYkHlg11WrCG9ad\nA7GbJ4KC+UbnGq720/PXbe+tmqNgDCdWbZ6jBVxgndAo4fzJvR9NlSSRR3dGBOeY\nzN9Il451AgMBAAECggEAEP+pcNiSJU92ZvFrjrLDrrzOwbbf7MbD6gzzmqhpezLD\nhIxDl7Zjrzo0JwKnW+6Y6skx9hS3OKZ1sbdn1zuTcc6MZwJQRWnEOjOxb371Kois\nqx2yQJ96Sh3w8z92+V02P3K6kh6deZOUE07DDO7/JzmNAfK72xpwFOH3QjMBajoq\nivnox/phbBmzn9VgDITuWkpb8nqwk0Q43UXD1eIXEIKQmt07JznKmbvWLys6F1ac\n3iI+anQPemD+K+vmh4CN2+M3tSNO9CqBAsKEWWtNF5HGsn0oKwIajSUTaXtmdl50\nbQ8REDbXGlEc7FawoYt8Hm1m5cehG11OuhhJAI5PkwKBgQDeQghGzML9DncyJOC2\nAFB14iIXSxbYtx2K236FzqNdEkbNJIjGyp60a6AGHzI8thtuIMaPljrwZA2jnKZx\n79E3f9xcqVyUSS5PLFAuq14E4fuJqX7ywBwppMa4WW3Lfd5FVGiqb5fR0Hp+oqI0\noPUAVRRgl/IaiLKtKq1oKLyYzwKBgQC5tgjTnN/bGGy3fCorL5oCj3xzqRO514lL\nzZI1na5xXHkjSui9z0jEWo3Q2rgNBGirYc5aTGRgaMzPovSdgCfwTiZSKNMD4O4U\nCXDMUULeGC/zgn2SAdY+OwpXq/RhZ56UUAeBgDfvoXzz/gwr9uhUjITKv1k4Pr3W\nfX+WzvZtewKBgQC1jh0ysItLqihmNse1BJa1ZS7R9k3IY/Tm/BvjdAPwwEBDzWdJ\ndDSmTxBeT9d6zoujr3Rj0KV+v0yA7TLt+afe/TxmGRb+LrV8iUdKiEP6GxudvW5t\nH88hmW+XIb5VrxEFc0k4iIXtJ68YiQOVmDHqvpUxvo1PbYD/gdA7OKOu8wKBgDYy\nb8UCBTp1mFS8Abp0u+d/ZHyEnWMhCcp7he3rxJsEt72bAO1T7xKOstB+5DO4U6ug\ncY5cuPaB3zPBhM3qNr2ksP5NN7fsDs7+KlMWbANQ372bGXZg3ttuc4g+gKVkjh0O\ndgJPHwPqBwNV4st51TfHgoGA8lK9zL0qBvBGGhi9AoGBAIH6PjQnOEhv9gTHFnT+\nxA0NRadcOPpxLsNUj2G1kZ1Y44IlYeJr7i6+EllsERgaCtxo3RC8b0UkfTLDKtLG\n03ccYXinyLkwAs8Fdh+7MWenePxVrpCkod1oL1PKW5M4SRnxnV5GHmASAnK2wvHj\nNx0dUHOJXipc7/tFeqqHKDce\n-----END PRIVATE KEY-----\n",
+  "client_email": "shivam-sahu-service-account@bigqueryroject-372608.iam.gserviceaccount.com",
+  "client_id": "105719589940334911034",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/shivam-sahu-service-account%40bigqueryroject-372608.iam.gserviceaccount.com"
+}
