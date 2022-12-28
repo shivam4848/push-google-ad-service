@@ -24,10 +24,8 @@ class BaseDBManager:
     def get_object(self, **filters):
         if "active" not in filters and self.has_active_filter:
             filters["active"] = True
-
         try:
             obj = self.model.objects.get(**filters)
-            print(f"{self.model} found : %s" % obj)
             return obj
         except self.model.DoesNotExist:
             print(f"{self.model} not found in DB")
@@ -39,7 +37,6 @@ class BaseDBManager:
     def get_object_without_active_check(self, **filters):
         try:
             obj = self.model.objects.get(**filters)
-            print(f"{self.model} found : %s" % obj)
             return obj
         except self.model.DoesNotExist:
             print(f"{self.model} not found in DB")
@@ -49,23 +46,18 @@ class BaseDBManager:
             return None
 
     def get_object_by_id(self, obj_id):
-
-        print(f"Get {self.model} by id, id: {obj_id}")
         return self.model.objects.get(id=obj_id)
 
     def list_objects(self, apply_default_active_filter=True, select_for_update=False, get_first=False, q=None,
                      **filters):
         if "active" not in filters and self.has_active_filter and apply_default_active_filter:
             filters["active"] = True
-
         if select_for_update:
             objs = self.model.objects.select_for_update().filter(**filters)
         elif q:
             objs = self.model.objects.filter(q)
         else:
             objs = self.model.objects.filter(**filters)
-
-        print(f"{self.model} objects found: {objs}")
         if not objs.exists():
             return objs
         elif objs.count() == 1 and get_first:
@@ -75,7 +67,6 @@ class BaseDBManager:
 
     def create_object(self, **data):
         obj = self.model.objects.create(**data)
-        print(f"Create {self.model} {obj}")
         return obj
 
     def update_objects(self, updates, query):
@@ -98,30 +89,23 @@ class BaseDBManager:
         return query.first()
 
     def create_in_bulk(self, data, batch_size=300):
-        """
-        data: List of dictionaries
-        """
         payload = [self.model(**vals) for vals in data]
         obj = self.model.objects.bulk_create(payload, batch_size=batch_size)
-        print(f"Bulk Create {self.model} {obj}")
         return obj
 
     def get_or_create(self, defaults={}, **data):
         obj, flag = self.model.objects.get_or_create(**data, defaults=defaults)
-        print(f"Get or Create {self.model} {obj}")
         return obj
 
     def execute_query(self, query):
-
         objs = self.model.objects.raw(query)
-
         return objs
 
     def execute_query_through_cursor(self, query):
         results = []
         with connection.cursor() as cursor:
             cursor.execute(query)
-            results = dictfetchall(cursor)
+            results = self.dictfetchall(cursor)
         return results
 
     def execute_query_through_cursor_named_tuple(self, query):

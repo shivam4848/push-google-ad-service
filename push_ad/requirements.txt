@@ -33,7 +33,7 @@ opentelemetry-sdk==0.17b0
 packaging==21.3
 pandas==1.5.2
 proto-plus==1.22.1
-protobuf==4.21.12
+# protobuf==4.21.12
 pyarrow==10.0.1
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
